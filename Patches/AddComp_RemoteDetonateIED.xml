@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_HighExplosive"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_Incendiary"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_EMP"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_AntigrainWarhead"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_Firefoam"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_Smoke"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Biotech</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="TrapIED_ToxGas"]/comps</xpath>
+      <value>
+        <li Class="RemoteDetonateIED.CompProperties_RemoteDetonateIED" />
+      </value>
+    </match>
+  </Operation>
+</Patch>
+

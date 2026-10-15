@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TrapIED_HighExplosive" or defName="TrapIED_Incendiary" or defName="TrapIED_EMP" or defName="TrapIED_AntigrainWarhead" or defName="TrapIED_Smoke"]/comps</xpath>
+    <value>
+      <li Class="RemoteDetonateIED.CompProperties_ProximityGate" />
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Biotech</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="TrapIED_ToxGas"]/comps</xpath>
+      <value>
+        <li Class="RemoteDetonateIED.CompProperties_ProximityGate" />
+      </value>
+    </match>
+  </Operation>
+</Patch>
