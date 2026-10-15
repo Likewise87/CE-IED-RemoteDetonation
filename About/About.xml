@@ -2,6 +2,7 @@
 <ModMetaData>
   <name>CE IED RemoteDetonation</name>
   <author>TSA</author>
+  <url>https://github.com/Likewise87/CE-IED-RemoteDetonation</url>
   <supportedVersions>
     <li>1.6</li>
     <li>1.7</li>
